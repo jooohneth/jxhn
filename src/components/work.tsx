@@ -195,7 +195,7 @@ const Work = () => {
           key={item.title}
           className="flex flex-col gap-4 pb-8 border-b border-white/10 border-dotted"
         >
-          <div className="flex items-center justify-between gap-4 uppercase">
+          <div className="flex flex-col md:flex-row md:items-center justify-between md:gap-4 gap-2 uppercase mb-4 md:mb-0">
             <h1 className="font-bold">{item.title}</h1>
             <div className="flex items-center gap-2">
               {"["}
