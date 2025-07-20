@@ -6,7 +6,7 @@ const content = [
     description: (
       <>
         general-purpose L2 built for financial applications, we build and
-        incubate many products like: meth, ftbc, and ur. here're some of my
+        incubate many products like: meth, ftbc, and ur. here&apos;re some of my
         direct / indirect contributions:
       </>
     ),
@@ -139,7 +139,7 @@ const content = [
     description: (
       <>
         my first position in this space, meeting dcbuilder changed my life and
-        career, if you're reading this - thank you! 🙏
+        career, if you&apos;re reading this - thank you! 🙏
       </>
     ),
     points: null,
