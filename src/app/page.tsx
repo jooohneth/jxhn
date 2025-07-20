@@ -1,103 +1,112 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { useState, useRef, useEffect } from "react";
+import { motion } from "framer-motion";
+
+import Tldr from "@/components/tldr";
+import Work from "@/components/work";
+
+const Home = () => {
+  const [activeSection, setActiveSection] = useState(1);
+  const [underlineStyle, setUnderlineStyle] = useState({ left: 0, width: 0 });
+  const navRef = useRef<HTMLElement>(null);
+
+  const navItems = [
+    { id: 1, label: "tl;dr" },
+    { id: 2, label: "work" },
+  ];
+
+  const handleSectionChange = (newSection: number) => {
+    setActiveSection(newSection);
+  };
+
+  useEffect(() => {
+    if (navRef.current) {
+      const activeElement = navRef.current.children[
+        activeSection
+      ] as HTMLElement;
+      if (activeElement) {
+        const navRect = navRef.current.getBoundingClientRect();
+        const activeRect = activeElement.getBoundingClientRect();
+        setUnderlineStyle({
+          left: activeRect.left - navRect.left,
+          width: activeRect.width,
+        });
+      }
+    }
+  }, [activeSection]);
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="font-mono font-medium lowercase">
+      <div className="px-20 py-10 mx-auto min-h-screen w-[50%] grid grid-rows-[auto_1fr] gap-8 items-start border-l border-r border-white/10 border-dotted">
+        <header className="space-y-10">
+          <div className="flex justify-between items-center">
+            <h1 className="text-xl border-l-6 border-hyper pl-5">
+              jxhn / john / thai{" "}
+            </h1>
+            <div className="flex items-center gap-4">
+              {"["}
+              <a
+                className="text-white/50 hover:text-white"
+                href="https://x.com/0xjooohn"
+              >
+                x
+              </a>
+              {", "}
+              <a
+                className="text-white/50 hover:text-white"
+                href="https://github.com/jooohneth"
+              >
+                gh
+              </a>
+              {", "}
+              <a
+                className="text-white/50 hover:text-white"
+                href="https://www.linkedin.com/in/jooohneth/"
+              >
+                li
+              </a>
+              {"]"}
+            </div>
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+          <nav className="relative flex gap-8" ref={navRef}>
+            <motion.div
+              className="absolute bottom-0 h-[1px] bg-current"
+              animate={{
+                left: underlineStyle.left,
+                width: underlineStyle.width,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+              }}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+            {navItems.map((item) => (
+              <div
+                key={item.id}
+                className={`text-sm cursor-pointer transition-colors duration-200 ${
+                  activeSection === item.id
+                    ? "text-white"
+                    : "text-white/60 hover:text-white/80"
+                }`}
+                onClick={() => handleSectionChange(item.id)}
+              >
+                {item.label}
+              </div>
+            ))}
+          </nav>
+        </header>
+
+        <main className="mt-10 w-full overflow-hidden text-sm">
+          {activeSection === 1 && <Tldr />}
+          {activeSection === 2 && <Work />}
+        </main>
+      </div>
     </div>
   );
-}
+};
+
+export default Home;
