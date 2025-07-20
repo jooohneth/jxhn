@@ -38,9 +38,9 @@ const Home = () => {
 
   return (
     <div className="font-mono font-medium lowercase">
-      <div className="px-20 py-10 mx-auto min-h-screen w-[50%] grid grid-rows-[auto_1fr] gap-8 items-start border-l border-r border-white/10 border-dotted">
+      <div className="p-5 md:px-20 md:py-10 mx-auto min-h-screen w-full md:w-[80%] lg:w-[70%] xl:w-[50%] grid grid-rows-[auto_1fr] gap-8 items-start border-l border-r border-white/10 border-dotted">
         <header className="space-y-10">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between md:items-center md:gap-0 gap-3 border-b border-white/10 border-dotted pb-5">
             <h1 className="text-xl border-l-6 border-hyper pl-5">
               jxhn / john / thai{" "}
             </h1>
@@ -70,7 +70,7 @@ const Home = () => {
             </div>
           </div>
 
-          <nav className="relative flex gap-8" ref={navRef}>
+          <nav className="relative flex gap-8 justify-center" ref={navRef}>
             <motion.div
               className="absolute bottom-0 h-[1px] bg-current"
               animate={{
