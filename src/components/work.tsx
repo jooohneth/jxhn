@@ -20,12 +20,13 @@ const content = [
             mantle network: testnet → mainnet,{" "}
             <a
               href="https://l2beat.com/scaling/projects/mantle"
-              className="hover:text-hyper"
+              className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              $0 → $1.7B TVL.
+              $0 → $1.7B TVL
             </a>
+            .
           </span>
         </div>
         <div className="flex gap-2">
@@ -45,7 +46,7 @@ const content = [
             working with projects and founders via:{" "}
             <a
               href="https://cookathon.dev"
-              className="hover:text-hyper"
+              className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -55,13 +56,14 @@ const content = [
             , residencies, and
             <a
               href="https://lightning.mantle.xyz"
-              className="hover:text-hyper"
+              className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
               {" "}
-              grants.
+              grants
             </a>
+            .
           </span>
         </div>
         <div className="flex gap-2">
@@ -70,7 +72,7 @@ const content = [
             some products i built / contributed to:{" "}
             <a
               href="https://rewards.mantle.xyz/"
-              className="hover:text-hyper"
+              className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -79,30 +81,28 @@ const content = [
             [
             <a
               href="https://rainbowkit.com/"
-              className="hover:text-hyper"
+              className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
               rainbow
             </a>{" "}
-            →
+            →{" "}
             <a
               href="https://privy.io/"
-              className="hover:text-hyper"
+              className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               privy
             </a>
-            ], builder hub, documentation,
+            ], builder hub, documentation,{" "}
             <a
               href="https://www.mnt-faucet.xyz/"
-              className="hover:text-hyper"
+              className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               faucet
             </a>
             , and many more...
@@ -133,6 +133,52 @@ const content = [
       <div className="flex flex-col gap-1">
         <div className="flex gap-2">
           <span>•</span>
+          <span>
+            prev. editions:{" "}
+            <a
+              href="https://x.com/sozuhaus/status/1844016606764257388"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              bangkok
+            </a>
+            ,{" "}
+            <a
+              href="https://x.com/sozuhaus/status/1878804015066001646"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              denver
+            </a>
+            ,{" "}
+            <a
+              href="https://x.com/sozuhaus/status/1925227531403243641"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              mallorca
+            </a>
+            ,{" "}
+            <a
+              href="https://x.com/sozuhaus/status/1937866319992434995"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              cannes
+            </a>
+            , and many more.
+          </span>
+        </div>
+        <div className="flex gap-2">
+          <span>•</span>
           <span>joined in 2022 → now co-orgazing with frens.</span>
         </div>
         <div className="flex gap-2">
@@ -146,7 +192,7 @@ const content = [
             built:
             <a
               href="https://pump.fun/"
-              className="hover:text-hyper"
+              className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -156,7 +202,7 @@ const content = [
             ,{" "}
             <a
               href="https://www.getclave.com/"
-              className="hover:text-hyper"
+              className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -166,7 +212,7 @@ const content = [
             ,{" "}
             <a
               href="https://exolabs.net/"
-              className="hover:text-hyper"
+              className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -197,7 +243,18 @@ const content = [
       <div className="flex flex-col gap-1">
         <div className="flex gap-2">
           <span>•</span>
-          <span>art by Petravoice, arguably the most viral ct artist.</span>
+          <span>
+            art by{" "}
+            <a
+              href="https://x.com/petravoice"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Petravoice
+            </a>
+            , arguably the most viral ct artist.
+          </span>
         </div>
         <div className="flex gap-2">
           <span>•</span>
@@ -238,7 +295,18 @@ const content = [
   {
     title: "> boys - [ tech lead ]",
     description: (
-      <>Boys NFT Collection launched by PetraVoice on Mantle Network.</>
+      <>
+        Boys NFT Collection launched by{" "}
+        <a
+          href="https://x.com/petravoice"
+          className="text-hyper hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Petravoice
+        </a>{" "}
+        on Mantle Network.
+      </>
     ),
     points: (
       <div className="flex flex-col gap-1">
@@ -320,7 +388,7 @@ const content = [
         and lead me to meeting{" "}
         <a
           href="https://x.com/DCbuild3r"
-          className="hover:text-hyper"
+          className="text-hyper hover:underline"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -329,7 +397,7 @@ const content = [
         and{" "}
         <a
           href="https://x.com/0xveer"
-          className="hover:text-hyper"
+          className="text-hyper hover:underline"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -363,7 +431,7 @@ const Work = () => {
               {item.links.map((link, index) => (
                 <div key={index}>
                   <a
-                    className="text-white/50 hover:text-white"
+                    className="text-white/60 hover:underline"
                     key={link.title}
                     href={link.href}
                     target="_blank"

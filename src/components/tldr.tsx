@@ -21,7 +21,18 @@ const content = [
         </div>
         <div className="flex gap-2">
           <span>•</span>
-          <span>deeply into building, learning, and shipping in public.</span>
+          <span>
+            deeply into building, learning, and shipping in public {"["}
+            <a
+              href="https://x.com/jooohneth"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              random content
+            </a>
+            {"]"}.
+          </span>
         </div>
         <div className="flex gap-2">
           <span>•</span>
@@ -35,7 +46,7 @@ const content = [
             my favorite thing to do is supporting builders{" "}
             <a
               href="https://x.com/sozuhaus"
-              className="hover:text-hyper"
+              className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -63,7 +74,10 @@ const Tldr = () => {
   return (
     <div className="flex flex-col gap-10">
       {content.map((item) => (
-        <div key={item.title} className="flex flex-col gap-4">
+        <div
+          key={item.title}
+          className="flex flex-col gap-4 pb-8 border-b border-white/10 border-dotted"
+        >
           <h1 className="font-bold uppercase">{item.title}</h1>
           <div className="text-white/60">{item.description}</div>
         </div>

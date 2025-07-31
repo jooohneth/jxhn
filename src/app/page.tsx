@@ -15,24 +15,31 @@ const Home = () => {
             <div className="flex items-center gap-4">
               {"["}
               <a
-                className="text-white/50 hover:text-white"
+                className="text-white/60 hover:underline"
                 href="https://x.com/0xjooohn"
               >
                 x
               </a>
               {", "}
               <a
-                className="text-white/50 hover:text-white"
+                className="text-white/60 hover:underline"
                 href="https://github.com/jooohneth"
               >
                 gh
               </a>
               {", "}
               <a
-                className="text-white/50 hover:text-white"
+                className="text-white/60 hover:underline"
                 href="https://www.linkedin.com/in/jooohneth/"
               >
                 li
+              </a>
+              {", "}
+              <a
+                className="text-white/60 hover:underline"
+                href="mailto:jooohn.eth@gmail.com"
+              >
+                gm
               </a>
               {"]"}
             </div>
