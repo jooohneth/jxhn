@@ -24,7 +24,7 @@ const content = [
           <span>
             deeply into building, learning, and shipping in public {"["}
             <a
-              href="https://x.com/jooohneth"
+              href="https://x.com/0xjooohn/status/1917665593609838979"
               className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
