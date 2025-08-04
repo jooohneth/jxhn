@@ -12,10 +12,6 @@ const content = [
       <div className="flex flex-col gap-1">
         <div className="flex gap-2">
           <span>•</span>
-          <span>devrel, devsuccess, product, engineering.</span>
-        </div>
-        <div className="flex gap-2">
-          <span>•</span>
           <span>
             mantle network: testnet → mainnet,{" "}
             <a
@@ -29,21 +25,96 @@ const content = [
             .
           </span>
         </div>
-        <div className="flex gap-2">
-          <span>•</span>
-          <span>lead devex and devsuccess.</span>
-        </div>
+
         <div className="flex gap-2">
           <span>•</span>
           <span>
-            took part in building the developer community from scratch.
+            led devex, devsuccess. worked across devrel, infra, product,
+            engineering.
+          </span>
+        </div>
+
+        <div className="flex gap-2">
+          <span>•</span>
+          <span>some products i built / contributed to:</span>
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            <a
+              href="https://rewards.mantle.xyz/"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              mantle rewards station
+            </a>{" "}
+            [ auth migration, rainbow → privy ]
+          </span>
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            <a
+              href="https://refuel.mantle.xyz/"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              mantle refuel
+            </a>{" "}
+            [ swap migration, stargate → omni ]
+          </span>
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>developer documentation [ revamp, gitbook → mintlify ]</span>
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            <a
+              href="https://www.mnt-faucet.xyz/"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              mantle sepolia faucet
+            </a>
+          </span>
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>builder hub </span>
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>mantle passport</span>
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>and many more...</span>
+        </div>
+
+        <div className="flex gap-2">
+          <span>•</span>
+          <span>
+            took part in building and educating the developer community from
+            scratch.
           </span>
         </div>
 
         <div className="flex gap-2">
           <span>•</span>
           <span>
-            working with projects and founders via:{" "}
+            supported founders via:{" "}
             <a
               href="https://cookathon.dev"
               className="text-hyper hover:underline"
@@ -53,7 +124,7 @@ const content = [
               {" "}
               hackathons
             </a>
-            , residencies, and
+            ,
             <a
               href="https://lightning.mantle.xyz"
               className="text-hyper hover:underline"
@@ -63,49 +134,16 @@ const content = [
               {" "}
               grants
             </a>
+            , and{" "}
+            <a
+              href="https://sozu.haus"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              residencies
+            </a>
             .
-          </span>
-        </div>
-        <div className="flex gap-2">
-          <span>•</span>
-          <span>
-            some products i built / contributed to:{" "}
-            <a
-              href="https://rewards.mantle.xyz/"
-              className="text-hyper hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              mantle rewards station
-            </a>{" "}
-            [
-            <a
-              href="https://rainbowkit.com/"
-              className="text-hyper hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              rainbow
-            </a>{" "}
-            →{" "}
-            <a
-              href="https://privy.io/"
-              className="text-hyper hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              privy
-            </a>
-            ], builder hub, documentation,{" "}
-            <a
-              href="https://www.mnt-faucet.xyz/"
-              className="text-hyper hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              faucet
-            </a>
-            , and many more...
           </span>
         </div>
       </div>
@@ -181,46 +219,100 @@ const content = [
           <span>•</span>
           <span>joined in 2022 → now co-orgazing with frens.</span>
         </div>
-        <div className="flex gap-2">
-          <span>•</span>
-          <span>hosted and supported over 200 builders.</span>
-        </div>
+
         <div className="flex gap-2">
           <span>•</span>
           <span>
             worked with some of the most amazing builders in this industry, who
             built:
+          </span>
+        </div>
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
             <a
               href="https://pump.fun/"
               className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               pump.fun
             </a>
-            ,{" "}
+          </span>
+        </div>
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            <a
+              href="https://funny.money/"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              funny.money
+            </a>
+          </span>
+        </div>
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            <a
+              href="https://berryinvesting.com/"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              berry
+            </a>
+          </span>
+        </div>
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            <a
+              href="https://peanut.to/"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              peanut
+            </a>
+          </span>
+        </div>
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
             <a
               href="https://www.getclave.com/"
               className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               clave
             </a>
-            ,{" "}
+          </span>
+        </div>
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
             <a
               href="https://exolabs.net/"
               className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               exo labs
             </a>
-            , and many more.
           </span>
+        </div>
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>and many more...</span>
+        </div>
+
+        <div className="flex gap-2">
+          <span>•</span>
+          <span>hosted and supported {">"}200 builders.</span>
         </div>
       </div>
     ),
@@ -384,8 +476,8 @@ const content = [
     title: "> crystalize - [ SC Engineer intern ]",
     description: (
       <>
-        my first and most influential position in this space, which taught me
-        and lead me to meeting{" "}
+        my first position in this space, which taught me so much and lead me to
+        meeting{" "}
         <a
           href="https://x.com/DCbuild3r"
           className="text-hyper hover:underline"
@@ -393,8 +485,8 @@ const content = [
           rel="noopener noreferrer"
         >
           @dcbuilder
-        </a>{" "}
-        and{" "}
+        </a>
+        ,{" "}
         <a
           href="https://x.com/0xveer"
           className="text-hyper hover:underline"
@@ -403,7 +495,16 @@ const content = [
         >
           @0xveer
         </a>
-        , who both changed my life, if you&apos;re reading this - thank you! 🙏
+        , and{" "}
+        <a
+          href="https://x.com/doctorgm_01123"
+          className="text-hyper hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @doctorgm
+        </a>{" "}
+        who changed my life, if you&apos;re reading this - thank you! 🙏
       </>
     ),
     points: null,

@@ -1,12 +1,12 @@
 const content = [
   {
-    title: "me",
+    title: "> me",
     description: (
       <div className="flex flex-col gap-1">
-        <div className="flex gap-2">
+        {/* <div className="flex gap-2">
           <span>•</span>
           <span>20 y/o.</span>
-        </div>
+        </div> */}
         <div className="flex gap-2">
           <span>•</span>
           <span>born and raised in Ukraine 🇺🇦.</span>
@@ -14,6 +14,10 @@ const content = [
         <div className="flex gap-2">
           <span>•</span>
           <span>ethnically Vietnamese 🇻🇳.</span>
+        </div>
+        <div className="flex gap-2">
+          <span>•</span>
+          <span>based in North America 🇨🇦 → 🇺🇸.</span>
         </div>
         <div className="flex gap-2">
           <span>•</span>
@@ -34,12 +38,7 @@ const content = [
             {"]"}.
           </span>
         </div>
-        <div className="flex gap-2">
-          <span>•</span>
-          <span>
-            f*cking love a good, well-planned and well-designed product.
-          </span>
-        </div>
+
         <div className="flex gap-2">
           <span>•</span>
           <span>
@@ -55,10 +54,18 @@ const content = [
             .
           </span>
         </div>
+
         <div className="flex gap-2">
           <span>•</span>
           <span>
-            bullish on both sides of the spectrum [ memecoins → stablecoins ].
+            f*cking love a good, well-planned and well-designed product.
+          </span>
+        </div>
+
+        <div className="flex gap-2">
+          <span>•</span>
+          <span>
+            bullish on both sides of the spectrum [ natives → normies ].
           </span>
         </div>
         <div className="flex gap-2">
@@ -76,7 +83,7 @@ const Tldr = () => {
       {content.map((item) => (
         <div
           key={item.title}
-          className="flex flex-col gap-4 pb-8 border-b border-white/10 border-dotted"
+          className="flex flex-col gap-4 py-8 border-b border-white/10 border-dotted"
         >
           <h1 className="font-bold uppercase">{item.title}</h1>
           <div className="text-white/60">{item.description}</div>
