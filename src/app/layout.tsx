@@ -15,6 +15,35 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "jxhn",
   description: "probably nothing...",
+  metadataBase: new URL("https://jxhn.xyz"),
+  openGraph: {
+    title: "jxhn",
+    description: "probably nothing...",
+    url: "https://jxhn.xyz",
+    siteName: "jxhn",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "jxhn",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "jxhn",
+    description: "probably nothing...",
+    images: ["/og-image.jpg"],
+    creator: "@0xjooohn",
+  },
+
+  other: {
+    "telegram:channel": "@jooohnng",
+  },
 };
 
 export default function RootLayout({
