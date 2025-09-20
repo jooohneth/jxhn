@@ -1,6 +1,6 @@
 const content = [
   {
-    title: "> mantle - [ mar 23` → present ]",
+    title: "> mantle - [ devrel engineer, mar 23` → present ]",
     description: (
       <>
         L2 built for financial applications, we also build and incubate many
@@ -20,7 +20,7 @@ const content = [
               target="_blank"
               rel="noopener noreferrer"
             >
-              $0 → $1.7B TVL
+              $0 → $2B TVL
             </a>
             .
           </span>
@@ -48,7 +48,7 @@ const content = [
               target="_blank"
               rel="noopener noreferrer"
             >
-              mantle rewards station
+              rewards station
             </a>{" "}
             [ auth migration, rainbow → privy ]
           </span>
@@ -63,7 +63,7 @@ const content = [
               target="_blank"
               rel="noopener noreferrer"
             >
-              mantle refuel
+              refuel app
             </a>{" "}
             [ swap migration, stargate → omni ]
           </span>
@@ -90,7 +90,16 @@ const content = [
 
         <div className="flex gap-2 ml-8">
           <span>★</span>
-          <span>builder hub </span>
+          <span>
+            <a
+              href="https://mantle-builders-hub.vercel.app"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              builders hub
+            </a>
+          </span>
         </div>
 
         <div className="flex gap-2 ml-8">
@@ -121,17 +130,15 @@ const content = [
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               hackathons
             </a>
-            ,
+            ,{" "}
             <a
               href="https://lightning.mantle.xyz"
               className="text-hyper hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               grants
             </a>
             , and{" "}
@@ -214,10 +221,6 @@ const content = [
             </a>
             , and many more.
           </span>
-        </div>
-        <div className="flex gap-2">
-          <span>•</span>
-          <span>joined in 2022 → now co-orgazing with frens.</span>
         </div>
 
         <div className="flex gap-2">
@@ -429,7 +432,7 @@ const content = [
       },
       {
         title: "announcement",
-        href: "https://x.com/petravoice/status/1877067792857575532",
+        href: "https://x.com/petravoice/status/1874819462723190864",
       },
       {
         title: "scan",

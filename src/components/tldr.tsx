@@ -9,19 +9,19 @@ const content = [
         </div> */}
         <div className="flex gap-2">
           <span>•</span>
-          <span>born and raised in Ukraine 🇺🇦.</span>
+          <span>born and raised in Ukraine 🇺🇦</span>
         </div>
         <div className="flex gap-2">
           <span>•</span>
-          <span>ethnically Vietnamese 🇻🇳.</span>
+          <span>ethnically Vietnamese 🇻🇳</span>
         </div>
         <div className="flex gap-2">
           <span>•</span>
-          <span>based in North America 🇨🇦 → 🇺🇸.</span>
+          <span>based in Canada 🇨🇦</span>
         </div>
         <div className="flex gap-2">
           <span>•</span>
-          <span>fortunate to speak 4 languages fluently.</span>
+          <span>speak 4 languages</span>
         </div>
         <div className="flex gap-2">
           <span>•</span>
@@ -35,7 +35,7 @@ const content = [
             >
               random content
             </a>
-            {"]"}.
+            {"]"}
           </span>
         </div>
 
@@ -51,26 +51,23 @@ const content = [
             >
               @sozuhaus
             </a>
-            .
           </span>
         </div>
 
         <div className="flex gap-2">
           <span>•</span>
-          <span>
-            f*cking love a good, well-planned and well-designed product.
-          </span>
+          <span>sucker for a good, well-planned and well-designed product</span>
         </div>
 
         <div className="flex gap-2">
           <span>•</span>
           <span>
-            bullish on both sides of the spectrum [ natives → normies ].
+            bullish on both sides of the spectrum [ natives → normies ]
           </span>
         </div>
         <div className="flex gap-2">
           <span>•</span>
-          <span>and ofc - AI, gotta add the buzzword here somewhere.</span>
+          <span>and ofc - AI, gotta add the buzzword here somewhere</span>
         </div>
       </div>
     ),
