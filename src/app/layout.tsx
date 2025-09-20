@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "jxhn",
   description: "probably nothing...",
-  metadataBase: new URL("https://jxhn.xyz"),
+  metadataBase: new URL("https://jxhn.vercel.app"),
   openGraph: {
     title: "jxhn",
     description: "probably nothing...",
-    url: "https://jxhn.xyz",
+    url: "https://jxhn.vercel.app",
     siteName: "jxhn",
     images: [
       {
