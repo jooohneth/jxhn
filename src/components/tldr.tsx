@@ -26,7 +26,7 @@ const content = [
         <div className="flex gap-2">
           <span>•</span>
           <span>
-            deeply into building, learning, and shipping in public {"["}
+            into building, learning, and shipping in public {"["}
             <a
               href="https://x.com/0xjooohn/status/1917665593609838979"
               className="text-hyper hover:underline"
@@ -42,7 +42,7 @@ const content = [
         <div className="flex gap-2">
           <span>•</span>
           <span>
-            my favorite thing to do is supporting builders{" "}
+            i like supporting builders and founders{" "}
             <a
               href="https://x.com/sozuhaus"
               className="text-hyper hover:underline"
@@ -56,13 +56,13 @@ const content = [
 
         <div className="flex gap-2">
           <span>•</span>
-          <span>sucker for a good, well-planned and well-designed product</span>
+          <span>love a good, well-planned and well-designed product</span>
         </div>
 
         <div className="flex gap-2">
           <span>•</span>
           <span>
-            bullish on both sides of the spectrum [ natives → normies ]
+            bullish on both sides of the spectrum [ crypto-natives → normies ]
           </span>
         </div>
         <div className="flex gap-2">
