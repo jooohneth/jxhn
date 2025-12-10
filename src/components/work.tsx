@@ -1,6 +1,134 @@
 const content = [
   {
-    title: "> mantle - [ devrel engineer, mar 23` → present ]",
+    title: "> layerzero - [ devrel engineer, nov 2025 → present ]",
+    description: (
+      <>
+      LayerZero is a technology that enables applications to move data across blockchains, 
+      uniquely supporting censorship-resistant messages and permissionless development through immutable smart contracts.
+      </>
+    ),
+    points: (
+      <div className="flex flex-col gap-1">
+        <div className="flex gap-2">
+          <span>•</span>
+          <span>teams that build on LayerZero:
+          </span>
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            <a
+              href="https://www.bitgo.com/"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              BitGo
+            </a>{" "}
+            : [ WBTC ] - ~11.5B USD TVL
+          </span>
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            <a
+              href="https://www.ether.fi/"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              EtherFi
+            </a>{" "}
+            : [ weETH ] - ~7.5B USD TVL
+          </span>
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            <a
+              href="https://ethena.fi/"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ethena
+            </a>{" "}
+            : [ ENA, USDE, sUSDE ] - ~7B USD TVL
+          </span> 
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            <a
+              href="https://usdt0.to/"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Tether 
+            </a>{" "}
+            : [ USDT0, XAUT0 ] - ~5B USD TVL
+          </span>
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            <a
+              href="https://ondo.finance/global-markets"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ondo Global Markets 
+            </a>{" "}
+            : [ 150+ Tokenized Stocks ] - ~400M USD TVL
+          </span>
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            <a
+              href="https://stripe.com/"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Stripe  
+            </a>{" "} 
+            + {" "}
+            <a
+              href="https://tempo.xyz/"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Paradigm
+            </a>{" "} 
+            : [ Tempo ] - blockchain for payments at scale
+          </span>
+        </div>
+       
+      </div> 
+    ),
+    links: [
+      {
+        title: "website",
+        href: "https://layerzero.network",
+      },
+      {
+        title: "x",
+        href: "https://x.com/layerzero_core",
+      },
+    ],
+  },
+  {
+    title: "> mantle - [ devrel engineer, mar 2023 → oct 2025 ]",
     description: (
       <>
         L2 built for financial applications, we also build and incubate many
@@ -167,7 +295,7 @@ const content = [
     ],
   },
   {
-    title: "> sozu haus - [ nov 22` → present ]",
+    title: "> sozu haus - [ nov 2022 → ... ]",
     description: (
       <>
         builder / founder residency program supporting teams building from 1 →
