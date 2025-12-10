@@ -19,6 +19,30 @@ const content = [
           <span>★</span>
           <span>
             <a
+              href="https://stripe.com/"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Stripe  
+            </a>{" "} 
+            + {" "}
+            <a
+              href="https://www.paradigm.xyz/"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Paradigm
+            </a>{" "} 
+            : [ Tempo ] - blockchain for payments at scale
+          </span>
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            <a
               href="https://www.bitgo.com/"
               className="text-hyper hover:underline"
               target="_blank"
@@ -79,6 +103,21 @@ const content = [
           <span>★</span>
           <span>
             <a
+              href="https://www.paypal.com/ca/home"
+              className="text-hyper hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              PayPal
+            </a>{" "}
+            : [ PYUSD, PYUSD0 ] - ~4B USD TVL
+          </span>
+        </div>
+
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            <a
               href="https://ondo.finance/global-markets"
               className="text-hyper hover:underline"
               target="_blank"
@@ -87,30 +126,6 @@ const content = [
               Ondo Global Markets 
             </a>{" "}
             : [ 150+ Tokenized Stocks ] - ~400M USD TVL
-          </span>
-        </div>
-
-        <div className="flex gap-2 ml-8">
-          <span>★</span>
-          <span>
-            <a
-              href="https://stripe.com/"
-              className="text-hyper hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Stripe  
-            </a>{" "} 
-            + {" "}
-            <a
-              href="https://tempo.xyz/"
-              className="text-hyper hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Paradigm
-            </a>{" "} 
-            : [ Tempo ] - blockchain for payments at scale
           </span>
         </div>
        

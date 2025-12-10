@@ -26,16 +26,7 @@ const content = [
         <div className="flex gap-2">
           <span>•</span>
           <span>
-            into building, learning, and shipping in public {"["}
-            <a
-              href="https://x.com/0xjooohn/status/1917665593609838979"
-              className="text-hyper hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              random content
-            </a>
-            {"]"}
+            into building, learning, and shipping in public
           </span>
         </div>
 
