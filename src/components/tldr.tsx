@@ -47,7 +47,7 @@ const content = [
 
         <div className="flex gap-2">
           <span>•</span>
-          <span>i'm addicted to well-built and well-designed products</span>
+          <span>i&apos;m addicted to well-built and well-designed products</span>
         </div>
 
         <div className="flex gap-2">
