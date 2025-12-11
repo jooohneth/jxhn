@@ -26,14 +26,14 @@ const content = [
         <div className="flex gap-2">
           <span>•</span>
           <span>
-            into building, learning, and shipping in public
+            I build, learn, and ship in public
           </span>
         </div>
 
         <div className="flex gap-2">
           <span>•</span>
           <span>
-            i like supporting builders and founders{" "}
+            i support builders and founders{" "}
             <a
               href="https://x.com/sozuhaus"
               className="text-hyper hover:underline"
@@ -47,19 +47,46 @@ const content = [
 
         <div className="flex gap-2">
           <span>•</span>
-          <span>love a good, well-planned and well-designed product</span>
+          <span>i'm addicted to well-built and well-designed products</span>
         </div>
 
         <div className="flex gap-2">
           <span>•</span>
           <span>
-            bullish on both sides of the spectrum [ crypto-natives → normies ]
+            bullish on these buzzwords: 
           </span>
         </div>
-        <div className="flex gap-2">
-          <span>•</span>
-          <span>and ofc - AI, gotta add the buzzword here somewhere</span>
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            ai
+          </span> 
         </div>
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            defi
+          </span> 
+        </div>
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            prediction markets
+          </span> 
+        </div>
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            interoperability
+          </span> 
+        </div>
+        <div className="flex gap-2 ml-8">
+          <span>★</span>
+          <span>
+            stablecoins
+          </span> 
+        </div>
+       
       </div>
     ),
   },
@@ -71,10 +98,10 @@ const Tldr = () => {
       {content.map((item) => (
         <div
           key={item.title}
-          className="flex flex-col gap-4 py-8 border-b border-white/10 border-dotted"
+          className="flex flex-col gap-4 py-8 border-b border-foreground/10 border-dotted"
         >
           <h1 className="font-bold uppercase">{item.title}</h1>
-          <div className="text-white/60">{item.description}</div>
+          <div className="text-foreground/60">{item.description}</div>
         </div>
       ))}
     </div>

@@ -669,7 +669,7 @@ const Work = () => {
       {content.map((item) => (
         <div
           key={item.title}
-          className="flex flex-col gap-4 pb-8 border-b border-white/10 border-dotted"
+          className="flex flex-col gap-4 pb-8 border-b border-foreground/10 border-dotted"
         >
           <div className="flex flex-col md:flex-row md:items-center justify-between md:gap-4 gap-2 uppercase mb-4 md:mb-0">
             <h1 className="font-bold">{item.title}</h1>
@@ -678,7 +678,7 @@ const Work = () => {
               {item.links.map((link, index) => (
                 <div key={index}>
                   <a
-                    className="text-white/60 hover:underline"
+                    className="text-foreground/60 hover:underline"
                     key={link.title}
                     href={link.href}
                     target="_blank"
@@ -693,8 +693,8 @@ const Work = () => {
             </div>
           </div>
 
-          <div className="text-white/60">{item.description}</div>
-          {item.points && <div className="text-white/60">{item.points}</div>}
+          <div className="text-foreground/60">{item.description}</div>
+          {item.points && <div className="text-foreground/60">{item.points}</div>}
         </div>
       ))}
     </div>

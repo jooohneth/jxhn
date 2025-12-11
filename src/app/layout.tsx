@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,17 +47,39 @@ export const metadata: Metadata = {
   },
 };
 
+// Script that runs before React hydrates to prevent flash
+const themeScript = `
+  (function() {
+    const DEFAULT_COLOR = '#9896FF';
+    
+    // Set theme
+    const theme = localStorage.getItem('theme');
+    if (theme === 'light') {
+      document.documentElement.classList.remove('dark');
+    } else {
+      document.documentElement.classList.add('dark');
+    }
+    
+    // Set hyper color
+    const color = localStorage.getItem('hyperColor') || DEFAULT_COLOR;
+    document.documentElement.style.setProperty('--hyper', color);
+  })();
+`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body
-        className={`dark ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
