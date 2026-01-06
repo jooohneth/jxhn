@@ -1,6 +1,6 @@
 const content = [
   {
-    title: "> layerzero - [ devrel engineer, nov 2025 → present ]",
+    title: "> layerzero - [ senior devrel engineer, nov 2025 → present ]",
     description: (
       <>
       LayerZero is a technology that enables applications to move data across blockchains, 
@@ -11,7 +11,7 @@ const content = [
       <div className="flex flex-col gap-1">
         <div className="flex gap-2">
           <span>•</span>
-          <span>teams that build on LayerZero:
+          <span>I work with smart-contracts and teams that build on LayerZero:
           </span>
         </div>
 
