@@ -2,24 +2,12 @@
 
 import { useEffect } from "react";
 
-// Add your favorite colors here
-const FAVORITE_COLORS = [
-  "#9896FF", // aave purple
-  "#FFB400", // aave yellow
-  "#008AFF", // aave blue
-  "#FF3200", // aave red
-  "#39D1F9", // aave teal
-  "#95FCE4", // hyperliquid green
-  "#00E414", // cashapp green
-];
-
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  // Theme and color initialization is handled by inline script in layout.tsx
-  // This component only handles keyboard shortcuts
+  // Theme initialization runs from an inline script in layout.tsx (avoids flash).
+  // This component only owns the `t` keyboard shortcut.
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Don't toggle if user is typing in an input/textarea
       const target = e.target as HTMLElement;
       if (
         target.tagName === "INPUT" ||
@@ -40,23 +28,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
           localStorage.setItem("theme", "dark");
         }
       }
-
-      if (e.key === "r" || e.key === "R") {
-        // Get current color to avoid picking the same one
-        const currentColor = getComputedStyle(document.documentElement)
-          .getPropertyValue("--hyper")
-          .trim();
-
-        // Filter out current color and pick a random one
-        const availableColors = FAVORITE_COLORS.filter(
-          (color) => color.toLowerCase() !== currentColor.toLowerCase()
-        );
-        const randomColor =
-          availableColors[Math.floor(Math.random() * availableColors.length)];
-
-        document.documentElement.style.setProperty("--hyper", randomColor);
-        localStorage.setItem("hyperColor", randomColor);
-      }
     };
 
     window.addEventListener("keydown", handleKeyDown);
@@ -65,4 +36,3 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   return <>{children}</>;
 }
-
