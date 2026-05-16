@@ -1,6 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Geom:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
-@import url("https://fonts.googleapis.com/css2?family=Geom:wght@400;500;600;700&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
@@ -125,3 +125,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+.md-li { position: relative; padding-left: 1.25rem; }
+.md-li::before { content: '•'; position: absolute; left: 0; top: 0; }
+.md-list .md-list { padding-left: 1.5rem; margin-top: 0.25rem; }
+.md-list .md-list .md-li::before { content: '★'; }
