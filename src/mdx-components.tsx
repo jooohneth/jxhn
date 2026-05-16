@@ -7,16 +7,16 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-hyper hover:underline"
+        className="text-accent underline-offset-[3px] hover:underline"
         {...props}
       >
         {children}
       </a>
     ),
-    p: (props) => <p className="text-foreground/60" {...props} />,
+    p: (props) => <p className="text-muted" {...props} />,
     ul: (props) => (
       <ul
-        className="md-list flex flex-col gap-1 list-none p-0 text-foreground/60"
+        className="md-list flex flex-col gap-1 list-none p-0 text-muted"
         {...props}
       />
     ),
