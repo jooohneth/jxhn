@@ -62,7 +62,7 @@ export function Main({ children }: { children: ReactNode }) {
 export function About({ children }: { children: ReactNode }) {
   return (
     <div className="flex flex-col gap-4 py-8 border-b border-foreground/10 border-dotted">
-      <h1 className="md:text-[17px] font-semibold uppercase tracking-tight">{"> me"}</h1>
+      <h1 className="font-semibold uppercase tracking-tight">{"> me"}</h1>
       {children}
     </div>
   );
@@ -85,7 +85,7 @@ export function Section({
     <div className="flex flex-col gap-4 pb-8 border-b border-foreground/10 border-dotted">
       <div className="flex flex-col md:flex-row md:items-start md:flex-wrap justify-between md:gap-4 gap-2 uppercase mb-4 md:mb-0">
         <div className="flex flex-col gap-1">
-          <h1 className="md:text-[17px] font-semibold tracking-tight">
+          <h1 className="font-semibold tracking-tight">
             {`> ${company}`}
             {role && (
               <span className="whitespace-nowrap">{` - ${role}`}</span>
