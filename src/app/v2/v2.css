@@ -1,0 +1,129 @@
+@import url("https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,400i,500i,600i&display=swap");
+
+/* v2.jxhn.xyz — scoped x.ai visual language. */
+.v2-scope {
+  --color-white: hsl(0 0% 100%);
+  --color-ivory: hsl(40 18% 97%);
+  --color-dove: hsl(222 19% 86%);
+  --color-pewter: hsl(213 12% 70%);
+  --color-fog: hsl(216 4% 51%);
+  --color-steel: hsl(216 4% 22%);
+  --color-umbra: hsl(221 12% 14%);
+  --color-charcoal: hsl(0 0% 10%);
+  --color-jet: hsl(0 0% 4%);
+  --color-sunset: hsl(22 100% 51.6%);
+  --color-dawn: hsl(37 100% 76%);
+
+  --background: var(--color-white);
+  --foreground: var(--color-jet);
+  --primary: var(--color-jet);
+  --primary-hover: var(--color-umbra);
+  --card: var(--color-ivory);
+  --accent: var(--color-sunset);
+  --muted: var(--color-fog);
+
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Switzer", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif;
+  text-transform: none;
+}
+
+.dark .v2-scope {
+  --background: var(--color-jet);
+  --foreground: var(--color-dove);
+  --primary: var(--color-white);
+  --primary-hover: var(--color-ivory);
+  --card: var(--color-charcoal);
+  --accent: var(--color-sunset);
+  --muted: var(--color-fog);
+}
+
+.v2-scope h1,
+.v2-scope h2,
+.v2-scope h3,
+.v2-scope h4 {
+  font-family: "Switzer", system-ui, sans-serif;
+}
+
+.v2-scope ::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+.v2-scope *::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.v2-scope *::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.v2-scope *::-webkit-scrollbar-thumb {
+  background: var(--color-dove);
+  border-radius: 0;
+}
+
+.dark .v2-scope *::-webkit-scrollbar-thumb {
+  background: var(--color-steel);
+}
+
+.v2-scope .md-list .md-list .md-li::before {
+  content: "–";
+}
+
+.v2-scope .md-li::before {
+  color: color-mix(in srgb, var(--foreground) 35%, transparent);
+}
+
+.v2-scope .md-list a {
+  color: var(--accent);
+  text-decoration: none;
+  underline-offset: 2px;
+  transition:
+    color 150ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-decoration-color 150ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-underline-offset 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .v2-scope .md-list a:hover {
+    color: var(--color-dawn);
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+}
+
+@keyframes v2-hero-shimmer {
+  0% {
+    background-position: 150% center;
+  }
+  100% {
+    background-position: -150% center;
+  }
+}
+
+.v2-scope .hero-cycler-underline {
+  background-image: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--primary) 25%, transparent) 0%,
+    color-mix(in srgb, var(--primary) 25%, transparent) 35%,
+    #6366f1 40%,
+    #a855f7 45%,
+    #ec4899 50%,
+    #f97316 55%,
+    #eab308 60%,
+    color-mix(in srgb, var(--primary) 25%, transparent) 65%,
+    color-mix(in srgb, var(--primary) 25%, transparent) 100%
+  );
+  background-size: 400% 100%;
+  animation: v2-hero-shimmer 3000ms linear 400ms 1 both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .v2-scope .hero-cycler-underline {
+    animation: none !important;
+  }
+}
