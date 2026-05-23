@@ -52,14 +52,9 @@ const HERO_ROLES = [
   "developer relations",
   "forward deployed engineering",
   "product engineering",
-  "frontend engineering",
-  "founding engineering",
-  "defi building",
+  "design engineering",
   "community building",
   "supporting founders",
-  "hackathon hosting",
-  "nft building",
-  "shipping in public",
 ] as const;
 
 export function Hero({
