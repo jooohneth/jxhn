@@ -49,13 +49,13 @@ export function Header({
 }
 
 const HERO_ROLES = [
-  "developer relations",
   "forward deployed engineering",
+  "agents, harnesses and training",
   "product engineering",
+  "developer relations",
   "design engineering",
   "community building",
   "supporting founders",
-  "agents, harnesses and training",
 ] as const;
 
 export function Hero({
