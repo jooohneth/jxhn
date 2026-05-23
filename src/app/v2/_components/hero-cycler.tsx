@@ -34,7 +34,7 @@ export function HeroCycler({ words = DEFAULT_WORDS }: { words?: readonly string[
                 ease: [0.23, 1, 0.32, 1],
               }}
             >
-              {char}
+              {char === " " ? " " : char}
             </motion.span>
           ))}
         </AnimatePresence>
