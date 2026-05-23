@@ -55,10 +55,11 @@ const HERO_ROLES = [
   "design engineering",
   "community building",
   "supporting founders",
+  "agents, harnesses and training",
 ] as const;
 
 export function Hero({
-  prefix = "i do",
+  prefix = "i specialize in",
   words = HERO_ROLES,
 }: {
   prefix?: string;
