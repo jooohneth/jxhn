@@ -49,9 +49,8 @@ export function Header({
 }
 
 const HERO_ROLES = [
-  "devrel",
+  "developer relations",
   "forward deployed engineering",
-  "smart contract integrations",
   "product engineering",
   "frontend engineering",
   "founding engineering",
@@ -71,8 +70,8 @@ export function Hero({
   words?: readonly string[];
 }) {
   return (
-    <section className="pt-32 sm:pt-40 lg:pt-48">
-      <h1 className="font-display text-4xl font-medium leading-[1.05] tracking-[-0.025em] sm:text-5xl lg:text-6xl lg:leading-none">
+    <section className="overflow-x-hidden pt-32 sm:pt-40 lg:pt-48">
+      <h1 className="font-display text-2xl font-medium leading-[1.05] tracking-[-0.025em] sm:text-4xl lg:text-6xl lg:leading-none">
         {prefix}
         <br />
         <HeroCycler words={words} />
