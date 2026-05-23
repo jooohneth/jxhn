@@ -51,6 +51,19 @@ export function ThemeHint() {
   );
 }
 
+export function Quote({ text, by }: { text: string; by: string }) {
+  return (
+    <blockquote className="py-8 text-center">
+      <p className="text-xs italic leading-relaxed text-muted">
+        &ldquo;{text}&rdquo;
+      </p>
+      <footer className="mt-2 text-[10px] text-foreground/40 not-italic">
+        — {by}
+      </footer>
+    </blockquote>
+  );
+}
+
 export function Main({ children }: { children: ReactNode }) {
   return (
     <main className="w-full overflow-hidden text-sm space-y-16">

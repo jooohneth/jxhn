@@ -91,8 +91,8 @@ export function Quote({
   by: string;
 }) {
   return (
-    <blockquote className="mt-12 border-l-2 border-foreground/10 py-1 pl-6">
-      <p className="font-display text-lg italic leading-relaxed text-foreground/50">
+    <blockquote className="py-8 text-center">
+      <p className="font-display text-sm italic leading-relaxed text-foreground/50">
         &ldquo;{text}&rdquo;
       </p>
       <footer className="mt-3 font-mono text-[11px] text-foreground/35 not-italic">
