@@ -75,7 +75,7 @@ export function Main({ children }: { children: ReactNode }) {
 export function About({ children }: { children: ReactNode }) {
   return (
     <div className="flex flex-col gap-4 py-8 border-b border-foreground/10 border-dotted">
-      <h1 className="font-semibold uppercase tracking-tight">{"> me"}</h1>
+      <h1 className="font-semibold uppercase tracking-tight">{"> about"}</h1>
       {children}
     </div>
   );
