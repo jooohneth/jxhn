@@ -8,11 +8,17 @@
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
   --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-dawn: var(--color-dawn);
 
   --font-sans: "Geist", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
     Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-display: "Switzer", "Geist", system-ui, sans-serif;
+
+  --radius-pill: 9999px;
 
   --ease-out-cursor: cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -22,6 +28,9 @@
   --foreground: #26251e;
   --accent: #f54e00;
   --muted: #595852;
+  --card: #f7f7f4;
+  --primary: #26251e;
+  --color-dawn: hsl(37 100% 76%);
 }
 
 .dark {
@@ -78,4 +87,87 @@
 }
 .md-list .md-list .md-li::before {
   content: "★";
+}
+
+/* starship.jxhn.xyz — grok-flavored chrome.
+   Scoped to .starship-scope so it can't bleed into the main site. */
+@property --beam-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes starship-beam {
+  to {
+    --beam-angle: 360deg;
+  }
+}
+
+@keyframes starship-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+.starship-scope {
+  text-transform: none;
+}
+
+.starship-scope * {
+  transition: none;
+}
+
+.starship-beam {
+  background: conic-gradient(
+    from var(--beam-angle),
+    transparent 0deg,
+    transparent 260deg,
+    #ff6308 320deg,
+    transparent 360deg
+  );
+  animation: starship-beam 6s linear infinite;
+}
+
+.starship-dot {
+  animation: starship-pulse 2s ease-in-out infinite;
+}
+
+.starship-chapter {
+  position: relative;
+}
+
+.starship-chapter-panel {
+  opacity: 0.4;
+  transform: translateY(6px);
+  transition:
+    opacity 1.1s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.starship-chapter-panel-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.starship-chapter-active article {
+  opacity: 1;
+}
+
+.starship-spec-grid {
+  max-width: 28rem;
+}
+
+.starship-part-label {
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (max-width: 767px) {
+  .starship-chapter {
+    min-height: 110vh;
+  }
 }
