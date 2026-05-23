@@ -129,9 +129,9 @@ function ContentCard({
 export function About({ children }: { children: ReactNode }) {
   return (
     <ContentCard>
-      <p className="mb-4 font-mono text-[10px] font-medium uppercase tracking-wider text-foreground/40">
+      <h2 className="mb-6 font-display text-2xl font-medium leading-8 tracking-[-0.025em]">
         about
-      </p>
+      </h2>
       {children}
     </ContentCard>
   );
