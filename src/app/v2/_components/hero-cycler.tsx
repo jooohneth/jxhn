@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const DEFAULT_WORDS = ["layerzero engineer"];
+const DEFAULT_WORDS = ["devrel"];
 
 export function HeroCycler({ words = DEFAULT_WORDS }: { words?: readonly string[] }) {
   const [idx, setIdx] = useState(0);

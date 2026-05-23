@@ -49,22 +49,22 @@ export function Header({
 }
 
 const HERO_ROLES = [
-  "layerzero engineer",
-  "mantle devrel",
-  "sozu haus ally",
-  "founding engineer",
-  "defi builder",
-  "hackathon host",
-  "founder supporter",
-  "product engineer",
-  "community builder",
-  "nft builder",
-  "smart contract dev",
-  "frontend engineer",
+  "devrel",
+  "forward deployed engineering",
+  "smart contract integrations",
+  "product engineering",
+  "frontend engineering",
+  "founding engineering",
+  "defi building",
+  "community building",
+  "supporting founders",
+  "hackathon hosting",
+  "nft building",
+  "shipping in public",
 ] as const;
 
 export function Hero({
-  prefix = "your go to",
+  prefix = "i do",
   words = HERO_ROLES,
 }: {
   prefix?: string;
