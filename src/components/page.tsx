@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import { TitleCycler } from "@/components/title-cycler";
 
 type Link = readonly [title: string, href: string];
 
@@ -23,10 +22,7 @@ export function Header({
   return (
     <header className="space-y-10">
       <div className="flex flex-col md:flex-row justify-between md:items-center md:gap-0 gap-3 border-b border-foreground/10 border-dotted pb-5">
-        <div className="flex flex-col gap-1 border-l-[6px] border-accent pl-5">
-          <h1 className="text-xl tracking-tight">{name}</h1>
-          <TitleCycler />
-        </div>
+        <h1 className="text-xl border-l-[6px] border-accent pl-5 tracking-tight">{name}</h1>
         <div className="flex items-center gap-4">
           {"["}
           {socials.map(([title, href], i) => (
