@@ -16,10 +16,10 @@ export function HeroCycler({ words = DEFAULT_WORDS }: { words?: readonly string[
   const word = words[idx];
 
   return (
-    <span className="relative inline-block align-bottom text-accent">
+    <span className="relative inline-block align-bottom pb-1.5 text-accent">
       <span
         className="inline-flex whitespace-nowrap"
-        style={{ clipPath: "inset(-4px 0px)" }}
+        style={{ clipPath: "inset(-6px 0 -2px 0)" }}
       >
         <AnimatePresence mode="popLayout" initial={false}>
           {word.split("").map((char, i) => (
@@ -41,7 +41,7 @@ export function HeroCycler({ words = DEFAULT_WORDS }: { words?: readonly string[
       </span>
       <span
         aria-hidden
-        className="hero-cycler-underline absolute inset-x-0 -bottom-1 h-[3px] rounded-pill"
+        className="hero-cycler-underline absolute inset-x-0 bottom-0 h-[3px] rounded-pill"
       />
     </span>
   );

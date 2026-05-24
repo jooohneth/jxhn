@@ -66,8 +66,8 @@ export function Hero({
   words?: readonly string[];
 }) {
   return (
-    <section className="overflow-x-hidden pt-32 sm:pt-40 lg:pt-48">
-      <h1 className="font-display text-2xl font-medium leading-[1.12] tracking-[-0.025em] sm:text-4xl sm:leading-[1.1] lg:text-6xl lg:leading-[1.08]">
+    <section className="pt-32 sm:pt-40 lg:pt-48">
+      <h1 className="font-display pb-1 text-2xl font-medium leading-[1.12] tracking-[-0.025em] sm:text-4xl sm:leading-[1.1] lg:text-6xl lg:leading-[1.08]">
         {prefix}
         <br />
         <HeroCycler words={words} />
