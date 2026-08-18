@@ -1,8 +1,6 @@
-import { PageShell, Header, ThemeHint, Main, About, Section, Quote } from '@/components/page'
+import { PageShell, Hero, AboutGrid, Stats, Work, Section, Main, Footer } from '@/components/page'
 
-<PageShell>
-
-<Header
+<PageShell
   name="jxhn / john"
   socials={[
     ['x',  'https://x.com/0xjooohn'],
@@ -10,26 +8,38 @@ import { PageShell, Header, ThemeHint, Main, About, Section, Quote } from '@/com
     ['li', 'https://www.linkedin.com/in/jooohneth/'],
     ['gm', 'mailto:jooohn.eth@gmail.com'],
   ]}
-/>
-
-<ThemeHint />
+>
 
 <Main>
 
-<About>
+<Hero
+  title="jxhn / john"
+  subtitle="I build, learn, and ship in public."
+  lede="Forward deployed engineer at LayerZero. Previously Mantle. I support builders and founders at Sozu Haus."
+  primary={['x', 'https://x.com/0xjooohn']}
+  secondary={['github', 'https://github.com/jooohneth']}
+/>
 
-- born and raised in Ukraine 🇺🇦
-- ethnically Vietnamese 🇻🇳
-- based in Canada 🇨🇦
-- speak 4 languages
-- I build, learn, and ship in public
-- i support builders and founders [@sozuhaus](https://x.com/sozuhaus)
-- i'm addicted to well-built and well-designed products
+<AboutGrid
+  items={[
+    { title: 'Ukraine', body: 'Born and raised.' },
+    { title: 'Vietnamese', body: 'Ethnically Vietnamese.' },
+    { title: 'Canada', body: 'Based in Canada.' },
+    { title: 'Four languages', body: 'I speak four languages.' },
+    { title: 'In public', body: 'I build, learn, and ship in public. Addicted to well-built, well-designed products.' },
+    { title: 'Sozu Haus', body: 'I support builders and founders.' },
+  ]}
+/>
 
-</About>
+<Stats
+  quote="you are not talking to someone who woke up a loser. that loser attitude, that loser premise makes no sense to me."
+  by="Jensen Huang, NVIDIA"
+/>
+
+<Work>
 
 <Section
-  company="layerzero"
+  company="LayerZero"
   role="forward deployed engineer"
   period="nov 2025 → present"
   links={[
@@ -52,7 +62,7 @@ LayerZero is a technology that enables applications to move data across blockcha
 </Section>
 
 <Section
-  company="sozu haus"
+  company="Sozu Haus"
   links={[
     ['X', 'https://x.com/sozuhaus'],
   ]}
@@ -74,7 +84,7 @@ builder / founder residency program supporting teams building from 1 → 100.
 </Section>
 
 <Section
-  company="mantle"
+  company="Mantle"
   role="software engineer (product & devrel)"
   period="mar 2023 → oct 2025"
   links={[
@@ -101,7 +111,7 @@ L2 built for financial applications, we also build and incubate many products li
 </Section>
 
 <Section
-  company="boys"
+  company="Boys"
   role="founding engineer"
   links={[
     ['website', 'https://boys.petravoice.art/'],
@@ -140,11 +150,17 @@ my first position in this space, which taught me so much and lead me to meeting 
 
 </Section>
 
-<Quote
-  text="you are not talking to someone who woke up a loser. that loser attitude, that loser premise makes no sense to me."
-  by="jensen huang, nvidia"
-/>
+</Work>
 
 </Main>
+
+<Footer
+  socials={[
+    ['x',  'https://x.com/0xjooohn'],
+    ['gh', 'https://github.com/jooohneth'],
+    ['li', 'https://www.linkedin.com/in/jooohneth/'],
+    ['gm', 'mailto:jooohn.eth@gmail.com'],
+  ]}
+/>
 
 </PageShell>

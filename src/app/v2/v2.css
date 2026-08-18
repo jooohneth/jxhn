@@ -78,7 +78,7 @@
   color: color-mix(in srgb, var(--foreground) 35%, transparent);
 }
 
-.v2-scope .md-list a {
+.v2-scope .md-a {
   color: var(--accent);
   text-decoration: none;
   underline-offset: 2px;
@@ -89,7 +89,7 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .v2-scope .md-list a:hover {
+  .v2-scope .md-a:hover {
     color: var(--color-dawn);
     text-decoration: underline;
     text-underline-offset: 8px;

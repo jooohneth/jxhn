@@ -1,7 +1,15 @@
 import type { Metadata, Viewport } from "next";
+import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+  axes: ["opsz"],
+});
 
 const SITE_URL = "https://jxhn.xyz";
 const NAME = "jxhn / john / thai";
@@ -115,8 +123,8 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f7f7f4" },
-    { media: "(prefers-color-scheme: dark)", color: "#14120b" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
   ],
   colorScheme: "dark light",
 };
@@ -147,12 +155,14 @@ const personJsonLd = {
 // Script that runs before React hydrates to prevent flash
 const themeScript = `
   (function() {
-    const theme = localStorage.getItem('theme');
-    if (theme === 'light') {
-      document.documentElement.classList.remove('dark');
-    } else {
-      document.documentElement.classList.add('dark');
-    }
+    try {
+      var c = localStorage.getItem('theme');
+      var dark = true;
+      if (c === 'light') dark = false;
+      else if (c === 'system') dark = matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.toggle('dark', dark);
+      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+    } catch (e) {}
   })();
 `;
 
@@ -162,11 +172,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${inter.variable} dark`}
+      data-theme="dark"
+      suppressHydrationWarning
+    >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <noscript>
+          <style>{`[data-reveal-item]{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
       </head>
-      <body className="antialiased font-sans">
+      <body className="antialiased">
         <Script
           id="person-jsonld"
           type="application/ld+json"
