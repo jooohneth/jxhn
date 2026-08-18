@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { BenefitMini } from "./xads/minis";
 import { HeroCanvas } from "./xads/hero-canvas";
 import { MobileNav } from "./xads/mobile-nav";
-import { Reveal, RevealItem } from "./xads/reveal";
+import { Reveal } from "./xads/reveal";
 import { StatsGrid } from "./xads/stats";
 import { ThemeToggle } from "./xads/theme-toggle";
 import { Wordmark } from "./xads/wordmark";
@@ -120,7 +120,7 @@ export function AboutGrid({
   ] as const;
 
   return (
-    <Reveal as="section" className="section" id="about">
+    <Reveal as="section" className="section section-anchor" id="about">
       <div className="card-grid">
         <header className="card-grid__heading section-heading" data-reveal-item="">
           <h2 className="text-h3">About</h2>
@@ -165,7 +165,7 @@ export function AboutGrid({
 
 export function Stats({ quote, by }: { quote: string; by: string }) {
   return (
-    <Reveal as="section" className="section" id="numbers">
+    <Reveal as="section" className="section section-anchor" id="numbers">
       <div className="section__inner">
         <header className="section-heading" data-reveal-item="">
           <h2 className="text-h3">Numbers</h2>
@@ -181,7 +181,7 @@ export function Stats({ quote, by }: { quote: string; by: string }) {
 
 export function Work({ children }: { children: ReactNode }) {
   return (
-    <Reveal as="section" className="section section--ruled" id="work">
+    <Reveal as="section" className="section section--ruled section-anchor" id="work">
       <div className="section__inner">
         <header className="section-heading" data-reveal-item="">
           <h2 className="text-h3">Work</h2>

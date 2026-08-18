@@ -50,7 +50,7 @@ export function Wordmark() {
           fontSize="280"
           fontWeight="500"
           letterSpacing="-0.04em"
-          style={{ fontFamily: "var(--font-sans)" }}
+          style={{ fontFamily: "var(--font-inter), Arial, sans-serif" }}
         >
           JXHN
         </text>

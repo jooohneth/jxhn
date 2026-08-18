@@ -516,6 +516,9 @@ body {
   grid-template-columns: repeat(8, minmax(0, 1fr));
   gap: 1rem;
 }
+.hero-heading {
+  grid-column: 1 / -1;
+}
 .hero-copy {
   grid-column: 1 / -1;
   display: flex;
@@ -855,6 +858,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  min-inline-size: 0;
 }
 .theme-toggle__btn {
   display: inline-flex;
