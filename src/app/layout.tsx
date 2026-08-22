@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
+import { AgentationToolbar } from "@/components/agentation-toolbar";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const SITE_URL = "https://jxhn.xyz";
@@ -174,6 +175,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
         <ThemeProvider>{children}</ThemeProvider>
+        <AgentationToolbar />
       </body>
     </html>
   );
