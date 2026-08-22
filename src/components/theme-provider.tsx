@@ -1,12 +1,16 @@
 "use client";
 
 import { useEffect } from "react";
+import { applyMode, cycleTheme } from "./xads/theme-toggle";
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  // Theme initialization runs from an inline script in layout.tsx (avoids flash).
-  // This component only owns the `t` keyboard shortcut.
-
   useEffect(() => {
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    const onSystem = () => {
+      if (localStorage.getItem("theme") === "system") applyMode("system");
+    };
+    mq.addEventListener("change", onSystem);
+
     const handleKeyDown = (e: KeyboardEvent) => {
       const target = e.target as HTMLElement;
       if (
@@ -18,20 +22,15 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       }
 
       if (e.key === "t" || e.key === "T") {
-        const isDark = document.documentElement.classList.contains("dark");
-
-        if (isDark) {
-          document.documentElement.classList.remove("dark");
-          localStorage.setItem("theme", "light");
-        } else {
-          document.documentElement.classList.add("dark");
-          localStorage.setItem("theme", "dark");
-        }
+        cycleTheme();
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    return () => {
+      mq.removeEventListener("change", onSystem);
+      window.removeEventListener("keydown", handleKeyDown);
+    };
   }, []);
 
   return <>{children}</>;

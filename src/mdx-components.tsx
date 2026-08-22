@@ -7,7 +7,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-accent underline-offset-[3px] hover:underline"
+        className="md-a underline-offset-[3px] hover:underline"
         {...props}
       >
         {children}
